@@ -28,8 +28,6 @@ export default {
     return {
       nodata: false,
       form: {
-        app_id: '',
-        secret_key: '',
         token_addr: '0x538588892018cd2781d33b4001da2ff922f30a80',
         addr: '',
       },
@@ -50,11 +48,9 @@ export default {
 
       let that = this;
       this.$axios({
-        url:'https://weimang.cyberemd.com/nft/welight/api/v1/nft/get_balance',
+        url:'https://weimang.cyberemd.com/welight/api/v1/nft/get_balance',
         method: 'get',
         params: ({
-                  app_id: that.form.app_id,
-                  secret_key: that.form.secret_key,
                   token_addr: that.form.token_addr,
                   addr: that.form.addr,
                 })

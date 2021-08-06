@@ -21,6 +21,6 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-# 使用准备
-获取你的app_id，并替换掉/components/nftList.vue中，this.form.app_id
-
+# 访问
+http://localhost:8080/#/?addr=
+addr参数为用户weid地址
