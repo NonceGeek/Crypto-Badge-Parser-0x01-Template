@@ -1,6 +1,8 @@
 <template>
   <div class='bg'>
+    
     <div class='my-container'>
+      <center><h1>{{$common.title}}</h1></center>
       <div class='wrap'>
         <div class='con'>
           <el-row :gutter='20'>
