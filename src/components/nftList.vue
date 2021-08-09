@@ -7,15 +7,14 @@
             <el-col :span='6' v-for='item in tokens'>
               <el-card class='box-card' shadow='hover'>
                 <div slot='header' class='clearfix'>
-                  <span>nft:{{ tokenAddr }}:{{ item.token_id }}</span>
+                  <span>welight:{{ tokenAddr }}:{{ item.token_id }}</span>
                 </div>
                 <div class='box-card-content'>
-                  <img :src='item.token_uri' class='image' />
+                  <img :src='$common.imgGalary + item.token_uri' class='image' />
                 </div>
               </el-card>
             </el-col>
           </el-row>
-          <span :v-show='nodata'>暂无数据</span>
         </div>
       </div>
     </div>
@@ -37,7 +36,7 @@ export default {
     };
   },
   created() {
-    this.form.addr = this.$route.query.addr;
+    this.form.addr = this.$common.addr;
     this.query();
   },
   methods: {
